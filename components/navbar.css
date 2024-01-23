@@ -1,0 +1,30 @@
+header{
+    width:100%;
+}
+
+nav{
+    width:90%;
+    height:10vh;
+    margin:0 auto;
+    display: flex;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    width:10%;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+nav ul li:hover{
+    font-weight: 700;
+}

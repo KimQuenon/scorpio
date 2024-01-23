@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Fragment } from 'react';
+import styles from "./navbar.css";
+import Image from "next/image"
 
 const navigation = [
     { name: 'Home', href: '/', current: false },
@@ -11,22 +13,27 @@ const navigation = [
 export default function NavBar() {
     return (
         <>
+        <header>
             <nav>
                 <ul>
                     <li>
-                        <Link href="/">Home</Link>
+                        <Link href="/">HOME</Link>
                     </li>
                     <li>
-                        <Link href="/about">About</Link>
+                        <Link href="/about">ABOUT</Link>
                     </li>
                     <li>
-                        <Link href="/store">Store</Link>
+                        <Image width="50" height="70" src="/images/logo.jpg" alt="logo" />
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/store">STORE</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">CONTACT</Link>
                     </li>
                 </ul>
             </nav>
+        </header>
         </>
     );
 }
