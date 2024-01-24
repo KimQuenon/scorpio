@@ -122,10 +122,19 @@ body{
 .social_media{
   width:5%;
   height:100vh;
-  background-color: blue;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
 }
 
-
+.social_media_box{
+  height:25vh;
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin:0 auto;
+}
 /*---------------------MEDIA QUERIES-------------------*/
 @media all and (max-width: 992px){
   .home_content, .home_intro, .home_btn{

@@ -1,4 +1,6 @@
 import { playfair } from "./fonts"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import Link from "next/link";
 
 export default function HomePage() {
@@ -21,7 +23,14 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                <div className="social_media"></div>
+                <div className="social_media">
+                    <div className="social_media_box">
+                        <FontAwesomeIcon icon={faFacebook} color="white" />
+                        <FontAwesomeIcon icon={faTwitter} color="white"/>
+                        <FontAwesomeIcon icon={faInstagram} color="white"/>
+                        <FontAwesomeIcon icon={faTiktok} color="white"/>
+                    </div>
+                </div>
             </div>
         </div>
        </>
