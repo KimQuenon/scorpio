@@ -17,7 +17,7 @@ export default async function StorePage()
                 {jewels.map((jewel) => (
                     <li key={jewel.id}>
                         <Link href={`/store/${jewel.id}`}>
-                            {/* <Image  width="380" height="180" src={review.image} alt={`ìmage de ${review.title}`} className='rounded-t' /> */}
+                            <Image  width="380" height="180" src={jewel.image} alt={`ìmage de ${jewel.title}`} className='rounded-t' />
                             <h2>{jewel.title}</h2>
                         </Link>
                     </li>
