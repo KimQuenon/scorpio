@@ -1,0 +1,47 @@
+{
+  "products": [
+    {
+      "id": 76,
+      "title": "Silver Ring Set Women",
+      "brand": "Darojay",
+      "description": "Jewelry Type:RingsCertificate Type:NonePlating:Silver PlatedShapeattern:noneStyle:CLASSICReligious",
+      "price": 70,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/76/thumbnail.jpg"
+    },
+    {
+      "id": 77,
+      "title": "Rose Ring",
+      "brand": "Copenhagen Luxe",
+      "description": "Brand: The Greetings Flower Colour: RedRing Colour: GoldenSize: Adjustable",
+      "price": 100,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/77/thumbnail.jpg"
+    },
+    {
+      "id": 78,
+      "title": "Rhinestone Korean Style Open Rings",
+      "brand": "Fashion Jewellery",
+      "description": "Fashion Jewellery 3Pcs Adjustable Pearl Rhinestone Korean Style Open Rings For Women",
+      "price": 30,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/78/thumbnail.jpg"
+    },
+    {
+      "id": 79,
+      "title": "Elegant Female Pearl Earrings",
+      "brand": "Fashion Jewellery",
+      "description": "Elegant Female Pearl Earrings Set Zircon Pearl Earings Women Party Accessories 9 Pairs/Set",
+      "price": 30,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/79/thumbnail.jpg"
+    },
+    {
+      "id": 80,
+      "title": "Chain Pin Tassel Earrings",
+      "brand": "Cuff Butterfly",
+      "description": "Pair Of Ear Cuff Butterfly Long Chain Pin Tassel Earrings - Silver ( Long Life Quality Product)",
+      "price": 45,
+      "thumbnail": "https://cdn.dummyjson.com/product-images/80/thumbnail.jpg"
+    }
+  ],
+  "total": 5,
+  "skip": 0,
+  "limit": 5
+}
