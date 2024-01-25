@@ -1,14 +1,14 @@
 import { playfair } from "./fonts"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image'
 import Link from "next/link";
 import { getJewels } from '@/lib/jewel'
+import Cards from "@/components/Cards";
 
 export default async function HomePage() {
 
-    const jewels = await getJewels(3)
+    const jewels = await getJewels()
 
     return (
        <>
@@ -51,25 +51,7 @@ export default async function HomePage() {
                         <button className="btn white sub"><Link href="/store">VIEW ALL &gt;</Link></button>
                     </div>
                 </div>
-                <div className="home_latest">
-                    {jewels.map((jewel) => (
-                        <div key={jewel.id}>
-                            <Link href={`/store/${jewel.id}`}>
-                                <Image  width="400" height="400" src={jewel.image} alt={`ìmage de ${jewel.title}`} className='rounded-t' />
-                                <div className="cards_title">
-                                    <div className="cards_text">
-                                        <p className="bold">{jewel.title}</p>
-                                        <p>{jewel.brand}</p>
-                                        <p>{jewel.price} €</p>
-                                    </div>
-                                    <div className="cards_arrow">
-                                        <p className={playfair.className}>&gt;</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                    ))}
-                </div>
+                <Cards jewels={jewels} displayCount={3} />
             </div>
         </div>
        </>
