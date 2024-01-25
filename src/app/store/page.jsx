@@ -8,7 +8,7 @@ export const metadata = {
 
 export default async function StorePage()
 {
-    const jewels = await getJewels(2)
+    const jewels = await getJewels(3)
     return(
         <>
             <h1>Store</h1>
