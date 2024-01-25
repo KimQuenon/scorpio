@@ -211,7 +211,86 @@ h2{
   font-weight: 700;
 }
 
+/*---------------------ABOUT-------------------*/
+#about{
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.about_content{
+  width:50%;
+  height:100vh;
+  background-image: url(../../public/images/about_content.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 70px;
+}
+
+.about_container{
+  width:90%;
+  height:50vh;
+  /* background-color: aqua; */
+  margin:0 auto;
+}
+
+.about_title{
+  width:100%;
+  height:12vh;
+  /* background-color: blue; */
+}
+
+.about_logo{
+  width:15%;
+  height: 12vh;
+  margin:0 auto;
+  background-image: url(../../public/images/logo.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.about_logo::before, .about_logo::after{
+  content: "";
+  display: block;
+  height: 1.5px;
+  background-color: #2D130A;
+  width: 280%;
+  position: absolute;
+  top:50%;
+  left:-280%;
+  z-index: 100;
+}
+
+.about_logo::after{
+  left:100%;
+}
+
+.about_text{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.about_text p{
+  margin-bottom: 10px;
+}
+
+.about_btn{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about_img{
+  width:50%;
+  height:100vh;
+  background-image: url(../../public/images/about_img.jpg);
+  background-position: center center;
+  background-size: cover;
+}
 
 /*---------------------MEDIA QUERIES-------------------*/
 @media all and (max-width: 992px){
@@ -259,12 +338,21 @@ h2{
     display: none;
   }
 
-  .container{
+  .container, .about_container{
     min-height:80vh;
   }
 
   .home_latest{
     margin-top: 70px;
+  }
+
+  .about_content, .about_img{
+    width:100%;
+  }
+
+  .about_btn{
+    justify-content: center;
+    gap:20px;
   }
 
 }
