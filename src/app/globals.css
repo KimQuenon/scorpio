@@ -14,7 +14,7 @@
   }
 }
 /*---------------------GENERAL-----------------------*/
-body, .text-brown{
+body, .text-brown, .brown:hover{
   color:#2D130A!important;
 }
 
@@ -32,13 +32,17 @@ body, .text-brown{
   border: 1px solid #2D130A;
 }
 
-.white:hover, .transparent:hover{
-  background-color:#2D130A;
+.white:hover, .transparent:hover, .brown{
+  background-color:#2D130A!important;
   color:white;
 }
 
-.white{
-  background-color: white;
+.brown{
+  border: 1px solid white;
+}
+
+.white, .brown:hover{
+  background-color: white!important;
 }
 
 .transparent{
@@ -175,6 +179,7 @@ h2{
   flex-direction: column;
 }
 
+/*---------------------CARDS PRODUCTS-------------------*/
 .home_latest{
   width:100%;
   min-height:65vh;
@@ -210,7 +215,7 @@ h2{
 
 /*---------------------MEDIA QUERIES-------------------*/
 @media all and (max-width: 992px){
-  .home_content, .home_intro, .home_btn{
+  .home_content, .home_intro, .home_btn, .footer_links, .footer_social_media, .sm, .footer_nav, .footer_copyright, .footer_input{
     width:100%;
   }
 
@@ -225,6 +230,14 @@ h2{
   .home_subbtn{
     width:100%;
     align-items: center;
+  }
+
+  .footer_container{
+    height:80vh;
+  }
+
+  .footer_copyright, .footer_nav{
+    text-align: center;
   }
 
 

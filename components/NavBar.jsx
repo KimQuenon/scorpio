@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Fragment } from 'react';
-import styles from "./navbar.css";
+import "./navbar.css";
 import Image from "next/image"
 
 const navigation = [
