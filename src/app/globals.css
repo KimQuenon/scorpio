@@ -52,7 +52,7 @@ body, .text-brown, .brown:hover{
 }
 
 h2{
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -113,7 +113,7 @@ h2{
   font-style: italic;
 }
 
-.home_intro hr{
+hr{
   width:70%;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -292,6 +292,100 @@ h2{
   background-size: cover;
 }
 
+/*---------------------CONTACT-------------------*/
+#contact{
+  display: flex;
+}
+
+.contact_container{
+  width:90%;
+  height: 100vh;
+  margin:0 auto;
+  /* background-color: purple; */
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact_img{
+  width:45%;
+  height:90vh;
+  background-image: url(../../public/images/contact_img.png);
+  background-position: center top;
+  background-size: cover;
+}
+
+.contact_content{
+  width:50%;
+  height:95vh;
+  /* background-color: blue; */
+}
+
+.contact_content h2{
+  text-align: end;
+}
+
+.contact_content hr{
+  margin-left: auto;
+}
+
+.contact_locations{
+  width:100%;
+  min-height:40vh;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.locations{
+  width:50%;
+  height:40vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.contact_subdiv{
+  width: 100%;
+  height:7vh;
+  /* background-color: purple; */
+  display: flex;
+  align-items: center;
+}
+
+.contact_icon{
+  width:15%;
+  height: 7vh;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+}
+
+.contact_icon svg {
+  width: 40%;
+  height: auto;
+  margin:0 auto;
+  /* background-color: aquamarine; */
+}
+
+.contact_text{
+  width:60%;
+  height:7vh;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.contact_social_media{
+  width:50%;
+  height:25vh;
+  /* background-color: antiquewhite; */
+  margin-top: 45px;
+  margin-left: auto;
+}
+
+
 /*---------------------MEDIA QUERIES-------------------*/
 @media all and (max-width: 992px){
   .home_content, .home_intro, .home_btn, .footer_links, .footer_social_media, .sm, .footer_nav, .footer_copyright, .footer_input{
@@ -346,7 +440,7 @@ h2{
     margin-top: 70px;
   }
 
-  .about_content, .about_img{
+  .about_content, .about_img, .contact_content, .locations{
     width:100%;
   }
 
@@ -354,5 +448,23 @@ h2{
     justify-content: center;
     gap:20px;
   }
+
+  .contact_img{
+    display: none;
+  }
+
+  .contact_content{
+    min-height:100vh;
+  }
+
+  .locations{
+    margin-bottom: 75px;
+    height:20vh;
+  }
+
+  .contact_social_media{
+    margin:0 auto;
+  }
+
 
 }
