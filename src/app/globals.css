@@ -179,7 +179,7 @@ hr{
   width:55%;
   height:25vh;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
 }
 
@@ -325,7 +325,7 @@ hr{
 }
 
 .contact_content h2{
-  text-align: end;
+  text-align: right;
 }
 
 .contact_content hr{
@@ -434,7 +434,7 @@ hr{
 
 .price{
   margin-top: 50px;
-  text-align: end;
+  text-align: right;
   font-size: 50px;
 }
 
