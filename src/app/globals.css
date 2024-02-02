@@ -133,7 +133,7 @@ hr{
   color:white;
 }
 
-.home_btn{
+.home_btn, .searchbar{
   width:55%;
   height:25vh;
   display: flex;
@@ -294,6 +294,14 @@ hr{
   background-image: url(../../public/images/about_img.jpg);
   background-position: center center;
   background-size: cover;
+}
+
+/*---------------------STORE-------------------*/
+.searchbar input{
+  width:70%;
+  border: 1px solid #2D130A;
+  padding:8px;
+  outline: none;
 }
 
 /*---------------------CONTACT-------------------*/
@@ -483,7 +491,7 @@ hr{
 
 /*---------------------MEDIA QUERIES-------------------*/
 @media all and (max-width: 992px){
-  .home_content, .home_intro, .home_btn, .footer_links, .footer_social_media, .sm, .footer_nav, .footer_copyright, .footer_input{
+  .home_content, .home_intro, .home_btn, .footer_links, .footer_social_media, .sm, .footer_nav, .footer_copyright, .footer_input, .searchbar, .searchbar input{
     width:100%;
   }
 
@@ -506,6 +514,10 @@ hr{
 
   .footer_copyright, .footer_nav{
     text-align: center;
+  }
+
+  .searchbar{
+    height:8vh;
   }
 
 

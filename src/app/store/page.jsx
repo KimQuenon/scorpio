@@ -56,6 +56,9 @@ export default function StorePage()
                             <hr/>
                             <p className="text-brown">Discover the epitome of elegance with our newest additions to the collection. Explore the latest trends and timeless classics that have just arrived at our online jewelry store. From captivating designs to exquisite craftsmanship, each piece tells a unique story. </p>
                         </div>
+                        <div className="searchbar">
+                            <input type="text" placeholder="Search..." onChange={(e) => setSearch(e.target.value)}/>
+                        </div>
                     </div>
                     <div className="home_latest">
                         {paginatedProducts.map((jewel) => (
