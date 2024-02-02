@@ -8,7 +8,7 @@ const Cards = ({ jewels, displayCount }) => {
       {jewels.slice(0, displayCount).map((jewel) => (
         <div key={jewel.id}>
           <Link href={`/store/${jewel.id}`}>
-            <Image width="400" height="400" src={jewel.image} alt={`ìmage de ${jewel.title}`} className="rounded-t" />
+            <Image width="400" height="400" src={jewel.image} alt={`ìmage de ${jewel.title}`} />
             <div className="cards_title">
               <div className="cards_text">
                 <h3 className="bold">{jewel.title}</h3>

@@ -32,6 +32,10 @@ body, .text-brown, .brown:hover{
   border: 1px solid #2D130A;
 }
 
+.large{
+  width:90%;
+}
+
 .white:hover, .transparent:hover, .brown{
   background-color:#2D130A!important;
   color:white;
@@ -385,6 +389,97 @@ hr{
   margin-left: auto;
 }
 
+/*---------------------INDIVDUAL DISPLAY-------------------*/
+#individual_display{
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+
+#individual_display .container{
+  min-height: 90vh;
+  width:90%;
+  margin:0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display_box{
+  width:50%;
+  height:90vh;
+  /* background-color: antiquewhite; */
+}
+
+.display_box hr{
+  width:100%;
+}
+
+.img{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display_title{
+  height:7vh;
+  display: flex;
+  align-items: center;
+}
+
+.display_title h1{
+  width:95%;
+  font-size: 30px;
+}
+
+.price{
+  margin-top: 50px;
+  text-align: end;
+  font-size: 50px;
+}
+
+.cart{
+  margin-top: 50px;
+  display: flex;
+  height: 5vh;
+}
+
+.payment{
+  width:60%;
+  height:5vh;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: brown; */
+  gap:15px;
+}
+
+.payment_method{
+  width:20%;
+  height:5vh;
+  /* background-color: blue; */
+  border-radius: 8px;
+  border: 1px solid gray;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#mastercard{
+  background-image: url(../../public/images/mastercard.png);
+}
+#visa{
+  background-image: url(../../public/images/visa.png);
+}
+#paypal{
+  background-image: url(../../public/images/PayPal.png);
+}
+#google{
+  background-image: url(../../public/images/google.png);
+}
+#apple{
+  background-image: url(../../public/images/apple.png);
+}
 
 /*---------------------MEDIA QUERIES-------------------*/
 @media all and (max-width: 992px){
@@ -440,7 +535,7 @@ hr{
     margin-top: 70px;
   }
 
-  .about_content, .about_img, .contact_content, .locations{
+  .about_content, .about_img, .contact_content, .locations, .display_box, .payment{
     width:100%;
   }
 
@@ -466,5 +561,13 @@ hr{
     margin:0 auto;
   }
 
+  .display_box:first-child, .img{
+    height:40vh;
+    margin-bottom: 30px;
+  }
+  
+  .display_title{
+    margin:30px 0;
+  }
 
 }
