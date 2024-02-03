@@ -27,3 +27,7 @@ nav ul li{
 nav ul li:hover{
     font-weight: 700;
 }
+
+#menuMobile, #logoMobile, .burger{
+    display: none;
+}

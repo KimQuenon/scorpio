@@ -13,7 +13,28 @@ const navigation = [
 export default function NavBar() {
     return (
         <>
+        <div id="menuMobile">
+            <nav>
+                <ul>
+                    <li>
+                        <Link href="/">HOME</Link>
+                    </li>
+                    <li>
+                        <Link href="/about">ABOUT</Link>
+                    </li>
+                    <li>
+                        <Link href="/store">STORE</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">CONTACT</Link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <header>
+            <li id="logoMobile">
+                <Image width="50" height="70" src="/images/logo.jpg" alt="logo" />
+            </li>
             <nav>
                 <ul>
                     <li>
@@ -33,6 +54,11 @@ export default function NavBar() {
                     </li>
                 </ul>
             </nav>
+            <div id="burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </header>
         </>
     );
