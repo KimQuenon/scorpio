@@ -6,15 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import ShareButtons from "@/components/ShareButtons"
 
-// export async function generateStaticParams() {
-//     const slugs = await getSlugs() 
-//     return slugs.map((id) => ({id}))
-// }
-
-export async function generateMetadata(id) {
-    const jewel = await getJewel(id)
+export async function generateMetadata(props){
+    const jewel = await getJewel(props.params.id)
+    
     return {
-        title: jewel.title
+        title: "Scorpio - "+ jewel.title
     }
 }
 

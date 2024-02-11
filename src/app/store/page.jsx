@@ -7,11 +7,6 @@ import Cards from "@/components/Cards";
 import Pagination from "@/components/Pagination";
 import { playfair } from "@/src/app/fonts";
 
-
-// export const metadata = {
-//     title:"Jewels"
-// }
-
 export default function StorePage()
 {
     // const jewels = await getJewels()

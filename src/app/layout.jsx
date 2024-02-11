@@ -3,6 +3,12 @@ import Footer from '@/components/Footer'
 import './globals.css'
 import { inria } from "./fonts"
 
+export const metadata = {
+    title: {
+        default: 'Scorpio'
+    }
+}
+
 export default function RootLayout({children}) {
     return (
         <html lang="fr" className={inria.className}>

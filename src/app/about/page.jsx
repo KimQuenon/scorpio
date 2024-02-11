@@ -1,6 +1,10 @@
 import Image from "next/image"
 import Link from "next/link";
 
+export const metadata={
+    title:"Scorpio - About"
+}
+
 export default function AboutPage()
 {
     return(
