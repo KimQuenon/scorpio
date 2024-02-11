@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { playfair } from "@/src/app/fonts";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-regular-svg-icons' 
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import ShareButtons from "@/components/ShareButtons"
 
 // export async function generateStaticParams() {
 //     const slugs = await getSlugs() 
@@ -59,7 +60,10 @@ export default async function JewelPage({ params: { id } }) {
                         </div>
                     </div>
                     <div className="display_box">
-                        <Link href="/store">&lt; Back to the store</Link>
+                        <div className="display_links">
+                            <Link href="/store">&lt; Back to the store</Link>
+                            <ShareButtons/>
+                        </div>
                         <div className="display_title">
                             <h1 className={playfair.className}>{jewel.title}</h1>
                             <div className="stars">{renderRatingStars(jewel.rating)}</div>

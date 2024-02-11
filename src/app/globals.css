@@ -411,6 +411,12 @@ hr{
   justify-content: center;
 }
 
+.display_links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .display_title{
   height:7vh;
   display: flex;
