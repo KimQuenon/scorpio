@@ -1,4 +1,4 @@
-import { getJewel/*, getSlugs*/ } from "@/lib/jewel"
+import { getJewel} from "@/lib/jewel"
 import Image from 'next/image';
 import Link from 'next/link';
 import { playfair } from "@/src/app/fonts";
@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import ShareButtons from "@/components/ShareButtons"
 
+
+//metadata + titre du produit
 export async function generateMetadata(props){
     const jewel = await getJewel(props.params.id)
     
@@ -17,6 +19,7 @@ export async function generateMetadata(props){
 export default async function JewelPage({ params: { id } }) {
     const jewel = await getJewel(id)
 
+    //conversion rating en étoiles
     const renderRatingStars = (rating) => {
         const fullStars = Math.floor(rating); // Nombre d'étoiles pleines
         const remainder = rating - fullStars; // Partie décimale pour les étoiles partielles

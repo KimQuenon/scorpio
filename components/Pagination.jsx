@@ -1,5 +1,6 @@
 import "./pagination.css";
 
+//calcul du nombre de pages
 const Pagination = (props) => {
     const pagesCount = Math.ceil(props.length / props.itemsPerPage);
     const pages = [];

@@ -12,9 +12,7 @@ const navigation = [
 ];
 
 export default function NavBar() {
-    // tu ne peux pas faire de référence au DOM comme en JS vanila, tu vas donc avoir besoin du hook useRef et ton component doit être client
-    // ref permet de stocker une référence à un élément du DOM, tu initialises ta ref avec le hook useRef()
-    // dans ton code jsx, tu vas référencer ton élément avec l'attribut ref et tu le lies à ta constante 
+    //init useRef
     const burger = useRef(null)
     const menuMobile = useRef(null)
 

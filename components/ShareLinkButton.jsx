@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
+//si click => copier le lien dans le presse papier + réinit après 1.5 sec
 export default function ShareLinkButton(){
     const [clicked, setClicked] = useState(false)
     const handleClick = () => {

@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+//affichage différé selon la page (3 en page d'accueil, 5 pour tous)
+//---ATTENTION--- plus d'utilisation nécessaires après gestion de la pagination pour le store
 
 const Cards = ({ jewels, displayCount }) => {
   return (
@@ -27,3 +29,4 @@ const Cards = ({ jewels, displayCount }) => {
 };
 
 export default Cards;
+ 

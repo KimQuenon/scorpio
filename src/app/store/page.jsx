@@ -11,32 +11,38 @@ export default function StorePage()
 {
     // const jewels = await getJewels()
 
+    //init hook + objets par page
     const [ products, setProducts] = useState([])
     const [search, setSearch] = useState("");
     const [currentPage, setCurrentPage] = useState(1)
     const itemsPerPage= 3
 
+    //recup données des bijoux
     const fetchData = async () => {
         const jewels = await getJewels(5)
         setProducts(jewels);
       };
     
+    //chargement des données
     useEffect(() => {
     fetchData();
     }, []);
 
+    //fonction pour barre de recherche
     const filteredJewels = products.filter(
         (product) =>
           product.title.toLowerCase().includes(search.toLowerCase()) ||
           product.brand.toLowerCase().includes(search.toLowerCase())
       );
 
+    //gestion de pagination
     const paginatedProducts = Pagination.getData(
         filteredJewels,
         currentPage,
         itemsPerPage
       );
 
+    //changement de page
     const handlePageChange = (page) => {
         setCurrentPage(page);
     }
