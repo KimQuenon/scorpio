@@ -1,5 +1,8 @@
 header{
     width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav{
@@ -28,6 +31,94 @@ nav ul li:hover{
     font-weight: 700;
 }
 
-#menuMobile, #logoMobile, .burger{
+#menuMobile, #logoMobile, #burger, .bar{
     display: none;
+}
+
+#menuMobile{
+    position: absolute;
+    top: -100vh;
+    height:100vh;
+    width:100%;
+    transition: all 1s;
+    background-color: #E3CDBA;
+    position:fixed;
+    z-index: 200;
+}
+
+#menuMobile nav{
+    width:90%;
+    height:90vh;
+    margin:0 auto;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menuMobile nav ul{
+    list-style: none;
+   
+}
+
+#menuMobile nav ul li{
+    margin: 30px 0;
+    width:100%;
+    text-align: center;
+}
+
+#menuMobile nav ul li a{
+    color: #2D130A;
+    text-decoration: none;
+    font-size: 45px;
+}
+
+#burger{
+    width: 50px;
+    height: 30px;
+    z-index:500;
+    cursor: pointer;
+    /* background-color: black; */
+}
+
+#burger .bar{
+    width: 80%;
+    height: 4px;
+    margin: 8px 0;
+    background-color: #2D130A;
+    transition: all 0.5s;
+}
+
+#burger.open-burger .bar:nth-child(1){
+    background-color: #2D130A;
+    transform: translate(0px,11px) rotate(45deg)
+}
+
+#burger.open-burger .bar:nth-child(2){
+    opacity: 0;
+}
+
+#burger.open-burger .bar:nth-child(3){
+    background-color: #2D130A;
+    transform: translate(0px,-11px) rotate(-45deg)
+}
+
+.open{
+    top: 0 !important;
+}
+
+#logoMobile{
+    margin:2%;
+}
+
+@media all and (max-width: 768px)
+{
+    #menuMobile, #logoMobile, #burger, .bar{
+        display: block;
+    }
+
+
+    header > nav{
+        display: none;
+    }
 }

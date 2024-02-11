@@ -258,7 +258,6 @@ hr{
   position: absolute;
   top:50%;
   left:-280%;
-  z-index: 100;
 }
 
 .about_logo::after{

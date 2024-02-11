@@ -7,9 +7,7 @@ export default function RootLayout({children}) {
     return (
         <html lang="fr" className={inria.className}>
             <body >
-                <header>
-                   <NavBar />
-                </header>
+                <NavBar />
                 <main>
                     {children}
                 </main>
